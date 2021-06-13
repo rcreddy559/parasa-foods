@@ -12,7 +12,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="review-service" target="11" />
+      <module name="review-service" target="16" />
       <module name="user-service" target="16" />
     </bytecodeTargetLevel>
   </component>
