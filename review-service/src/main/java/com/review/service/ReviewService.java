@@ -60,4 +60,8 @@ public class ReviewService {
         var reviewSave = reviewRepository.save(review);
         return modelMapper.map(reviewSave, ReviewModel.class);
     }
+
+    public void delete(Long id) {
+        reviewRepository.delete(reviewRepository.getById(id));
+    }
 }

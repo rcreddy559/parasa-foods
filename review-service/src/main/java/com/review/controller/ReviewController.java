@@ -3,10 +3,7 @@ package com.review.controller;
 import com.review.model.ReviewModel;
 import com.review.service.ReviewService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -30,4 +27,10 @@ public class ReviewController {
     public ReviewModel get(@PathVariable Long id) {
         return reviewService.find(id);
     }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id) {
+
+    }
+
 }
